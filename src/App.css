@@ -1,38 +1,108 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(219, 230, 253);
+  font-family: 'Poppins', sans-serif;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  width: 500px;
+  border-radius: 20px;
+  padding: 12px;
+  margin: 15px;
+  background-color: rgb(255, 255, 255);
+  box-shadow:rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+}
+
+.card-button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+a,button{
+  text-decoration: none;
+  color: black; 
+  cursor: pointer;
+}
+
+.remove{
+  color: red !important;
+}
+
+.stories-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.load-text{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-bar{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.query{
+  padding: 13px;
+  width: 500px;
+  max-width: 90%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  text-align: left;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.headline{
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+  font-weight: 600;
+}
+
+.pagination_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 20px 0;
+}
+
+.prev{
+  margin:0 20px;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.next {
+  margin: 0 20px;
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+}
+
+@media screen and (max-width:400px) {
+  .card{
+    width: 90%;
   }
 }
